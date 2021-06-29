@@ -30,7 +30,7 @@ export default function index() {
     </div>
     <section className='h-screen p-16'>
       <div className='h-full w-full  p-8  rounded-lg'>
-        <h1 className='font-Heading text-2xl'>Features</h1>
+        {/* <h1 className='font-Heading text-2xl'>Features</h1> */}
 {/* <div className='grid grid-flow-row grid-cols-3 gap-8'>
   {features.map(a=><div className='p-8 font-Heading font-thin  transition-all duration-150 rounded-lg'>{a}</div>)}
 </div> */}
