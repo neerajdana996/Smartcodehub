@@ -17,7 +17,7 @@ export default function index() {
 
         <div className=' rounded-lg relative border-gray-800  px-8 py-16'>
 
-          <p className='font-body text-sm absolute -top-5  text-white rounded-md bg-purple-600 inline px-4 py-2'>
+          <p className='font-body text-sm absolute -top-5  text-white rounded-md bg-indigo-900 inline px-4 py-2'>
 
            The Docs Are Still Under Development</p>
 
@@ -28,17 +28,6 @@ export default function index() {
           <ReactFlowDiagram />
         </div>
       </div>
-      <section className='h-screen sm:p-16'>
-        <div className='h-full w-full  p-8  rounded-lg'>
-          <h1 className='font-Heading text-4xl p-8'>Features</h1>
-          <div className='grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-8 gap-8'>
-            {features.map(a => <div className='p-8 border 
-            font-lato
-            border-white hover:shadow-lg text-gray-800 hover:border-black  font-thin  transition-all duration-150 rounded-lg'>{a}</div>)}
-          </div>
-
-        </div>
-      </section>
-    </>
+     </>
   )
 }
