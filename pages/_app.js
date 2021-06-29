@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
          <ul className='text-black flex space-x-6 items-center'>
            <li>Home</li>
            <li>Docs</li>
-           <li>Blog</li>
+           <li><a href='https://blog.smartcodehub.com'>Blog</a></li>
            <li className='px-4 py-2 cursor-pointer bg-black rounded text-white'>Get Started</li>
          </ul>
     </div>
