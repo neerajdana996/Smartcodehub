@@ -5,6 +5,10 @@ module.exports = {
     fontFamily:{
       'body': ['Open Sans'],
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'lato': ['Lato', 'Arial', 'sans-serif'],
+
+      'berkshire': ['Berkshire Swash, cursive', 'Arial', 'sans-serif'],
+
       'Heading': ['Berkshire Swash , cursive', 'Arial', 'sans-serif'],
     },
     extend: {},

@@ -13,7 +13,7 @@ const features = [
 export default function index() {
   return (
     <>
-      <div className='flex flex-row p-8 py-32 justify-evenly items-center'>
+      <div className='flex  sm:flex-row flex-col p-8 py-32 justify-evenly items-center'>
 
         <div className=' rounded-lg relative border-gray-800  px-8 py-16'>
 
@@ -21,19 +21,21 @@ export default function index() {
 
             Built For Developers By Developers</p>
 
-          <h1 className='font-Heading text-6xl mt-6 text-gray-700'>Smartcodehub</h1>
+          <h1 className='font-Heading text-6xl mt-6 text-gray-900'>Smartcodehub</h1>
           <p className='font-Heading text-3xl mt-4 text-gray-800'>Opensource Web Based Full Stack Web Application Generator</p>
         </div>
-        <div className='w-2/3'>
+        <div className='sm:w-2/3 w-full'>
           <ReactFlowDiagram />
         </div>
       </div>
-      <section className='h-screen p-16'>
+      <section className='h-screen sm:p-16'>
         <div className='h-full w-full  p-8  rounded-lg'>
-          {/* <h1 className='font-Heading text-2xl'>Features</h1> */}
-          {/* <div className='grid grid-flow-row grid-cols-3 gap-8'>
-  {features.map(a=><div className='p-8 font-Heading font-thin  transition-all duration-150 rounded-lg'>{a}</div>)}
-</div> */}
+          <h1 className='font-Heading text-4xl p-8'>Features</h1>
+          <div className='grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-8 gap-8'>
+            {features.map(a => <div className='p-8 border 
+            font-lato
+            border-white hover:shadow-lg text-gray-800 hover:border-black  font-thin  transition-all duration-150 rounded-lg'>{a}</div>)}
+          </div>
 
         </div>
       </section>
