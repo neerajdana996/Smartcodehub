@@ -17,9 +17,9 @@ export default function index() {
 
         <div className=' rounded-lg relative border-gray-800  px-8 py-16'>
 
-          <p className='font-body text-sm absolute -top-5  text-white rounded-md bg-black inline px-4 py-2'>
+          <p className='font-body text-sm absolute -top-5  text-white rounded-md bg-purple-600 inline px-4 py-2'>
 
-            Built For Developers By Developers</p>
+           The Docs Are Still Under Development</p>
 
           <h1 className='font-Heading text-6xl mt-6 text-gray-900'>Smartcodehub</h1>
           <p className='font-Heading text-3xl mt-4 text-gray-800'>Opensource Web Based Full Stack Web Application Generator</p>
