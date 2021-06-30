@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import Link from "next/link";
 function MyApp({ Component, pageProps }) {
   return <div>
-    <div className='h-16 bg-white sticky top-0 shadow-sm w-full  flex items-center px-8 justify-between flex-row'>
+    <div className='h-16 z-50 bg-white sticky top-0  w-full  flex items-center px-8 justify-between flex-row'>
       <h4 className='text-black text-2xl font-Heading '>Smartcodehub</h4>
       <ul className='text-black  space-x-6 items-center hidden sm:flex' >
         <li><Link href='/'>
