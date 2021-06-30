@@ -13,7 +13,7 @@ export default function index() {
                 </ul>
             </div>
             <div className='flex justify-center py-16 w-full text-3xl font-lato'>
-                <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-lg mx-auto">
+                <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-lg mx-auto">
                     <p>First Lets Clone teh backend and frontend Repositories</p>
                     <pre>
                         git clone https://github.com/Smart-code-hub/Smartcodehub-api
@@ -26,7 +26,7 @@ export default function index() {
 
                     <pre>
                         {` 
-version: "3"
+version: '3'
 services:
 api:
     container_name: Smartcodehub-api
