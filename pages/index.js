@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactFlowDiagram } from "../components/FlowDiagram";
+import Image from "next/image";
 
 const backendfeatures = [
   `The API comes with the latest tech Stack (node js, express js, and MongoDB) It comes with robust CRUD operations`,
@@ -38,12 +39,7 @@ export default function index() {
           <ReactFlowDiagram />
         </div>
       </div>
-      <section className=' w-full'>
-         
-      
-
-        <div>
-               <section className="py-10">
+      <section className="py-10">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap -mx-4 items-center mb-12 lg:mb-16">
             <div className="w-full lg:w-1/2 px-4">
@@ -76,8 +72,10 @@ export default function index() {
           </div>
         </div>
       </section>
-        </div>
-        <div>
+       
+      <section className='py-10'>
+      
+        <div className='container px-4 mx-auto'>
           <h1 className='prose my-8 prose-2xl'>Backend Features</h1>
           <div className="flex flex-wrap -mx-4 -mb-12">
           {frontendFeatures.map((a,i)=> <div key={i} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-12 flex items-start">
@@ -93,6 +91,36 @@ export default function index() {
 
 
       </section>
+      <footer className="py-20">
+        <div className="container px-4 mx-auto text-center">
+          <a className="inline-block mx-auto text-gray-600 text-2xl leading-none" href="#">
+          <Image src='/Smartcodehub.png' alt='Smartcodehub' height={150} width={150}/>
+
+          </a>
+         
+          <div>
+            <a className="inline-block mr-2 lg:mr-10" href="https://www.facebook.com/Smartcodehubofficial">
+              <Image height={24} width={24} src="/facebook.svg" />
+            </a>
+            <a className="inline-block mr-2 lg:mr-10" href="https://twitter.com/neeraj123bh">
+              <Image height={24} width={24} src="/twitter.svg" />
+            </a>
+            <a className="inline-block mr-2 lg:mr-10" href="https://github.com/Smart-code-hub/Smartcodehub-Docs">
+              <Image height={24} width={24} src="/github.svg" />
+            </a>
+            <a className="inline-block mr-2 lg:mr-10" href="#">
+              <Image height={24} width={24} src="/instagram.svg" />
+            </a>
+            <a className="inline-block" href="https://www.linkedin.com/in/neeraj-dana/">
+              <Image height={24} width={24} src="/linkedin.svg" />
+            </a>
+          </div>
+        </div>
+        <div className="mt-12 mb-8 border-b border-gray-50" />
+        <div className="container px-4 mx-auto">
+          <p className="text-center text-sm text-gray-400">All rights reserved © Smartcodehub</p>
+        </div>
+      </footer>
     </>
   )
 }
