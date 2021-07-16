@@ -52,11 +52,11 @@ export default function index() {
                 <h2 className="mt-2 mb-4 text-4xl lg:text-5xl font-bold font-heading">Smartcodehub Full stack web application generator</h2>
                 <div className="max-w-md">
                   <p className="mb-6 lg:mb-0 text-base text-gray-500 leading-loose">SmartCodeHub is a platform where you can quickly create a fully 
-          functional and highly customizable full-stack application. 
+          {`functional and highly customizable full-stack application. 
           and it's not just a boilerplate it has some fantastic features as discussed below. 
           Before going forward, please see this small video to get an idea of what 
           SmartCodeHub can do. I bet that it will be worth it if you are a javascript 
-          developer</p>
+          developer`}</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function index() {
             </div>
           </div>
           <div className="flex flex-wrap -mx-4 -mb-12">
-          {frontendFeatures.map((a,i)=> <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-12 flex items-start">
+          {frontendFeatures.map((a,i)=> <div key={i} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-12 flex items-start">
               <span className="flex-shrink-0 inline-flex items-center justify-center w-12 h-12 bg-gray-500 rounded-full font-bold text-gray-50">{i+1}</span>
               <div className="max-w-xs px-4">
                 <p className="text-lg text-gray-500 leading-loose">{a}.</p>
@@ -80,7 +80,7 @@ export default function index() {
         <div>
           <h1 className='prose my-8 prose-2xl'>Backend Features</h1>
           <div className="flex flex-wrap -mx-4 -mb-12">
-          {frontendFeatures.map((a,i)=> <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-12 flex items-start">
+          {frontendFeatures.map((a,i)=> <div key={i} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-12 flex items-start">
               <span className="flex-shrink-0 inline-flex items-center justify-center w-12 h-12 bg-gray-500 rounded-full font-bold text-gray-50">{i+1}</span>
               <div className="max-w-xs px-4">
                 <p className="text-lg text-gray-500 leading-loose">{a}.</p>
@@ -88,13 +88,7 @@ export default function index() {
             </div>)}
           </div>
         </div>
-        <div>
-          <h1 className='prose my-8 prose-2xl'>Vision.</h1>
-          <p className='text-lg text-gray-500 w-full   rounded-lg p-5'>
-            Currently, it provides backend in Node and mongo DB. By the end of this year, we will try to give full API in .net core, python, and go. And frontend in angular, lit-element, vue, and blazer directly from your UI.
-          </p>
-        </div>
-
+       
 
 
 
